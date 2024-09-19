@@ -1,0 +1,16 @@
+android_app_import {
+	name: "GameMode",
+	owner: "motorola",
+	apk: "proprietary/product/priv-app/GameMode/GameMode.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	required: [
+		"MotoSignatureApp",
+	],
+	product_specific: true,
+}
+
