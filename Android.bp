@@ -8,7 +8,9 @@ android_app_import {
 	},
 	privileged: true,
 	required: [
-		"MotoSignatureApp",
+		"moto-core_services",
+		"moto-settings",
+		"moto-checkin",
 	],
 	product_specific: true,
 }
