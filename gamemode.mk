@@ -21,6 +21,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Moto Signature App
 $(call inherit-product, vendor/motorola/MotoSignatureApp/motosignatureapp.mk)
 
+# Motorola Settings Provider
+$(call inherit-product, vendor/motorola/MotorolaSettingsProvider/motorolasettingsprovider.mk)
+
 # Moto Game Mode
 # Version: 35.02.17.00-Release
 PRODUCT_PACKAGES += \
