@@ -8,6 +8,9 @@ android_app_import {
 	},
 	privileged: true,
 	required: [
+		"com.motorola.gamemode",
+		"default-permissions-com.motorola.gamemode",
+		"privapp-permissions-com.motorola.gamemode",
 		"moto-core_services",
 		"moto-settings",
 		"moto-checkin",
@@ -17,3 +20,56 @@ android_app_import {
 	product_specific: true,
 }
 
+prebuilt_etc {
+	name: "default-permissions-com.motorola.gamemode",
+	owner: "motorola",
+	sub_dir: "default-permissions",
+	src: "proprietary/product/etc/default-permissions/default-permissions-com.motorola.gamemode.xml",
+	filename_from_src: true,
+	product_specific: true,
+}
+
+prebuilt_etc {
+	name: "com.motorola.gamemode",
+	owner: "motorola",
+	sub_dir: "permissions",
+	src: "proprietary/product/etc/permissions/com.motorola.gamemode.xml",
+	filename_from_src: true,
+	product_specific: true,
+}
+
+prebuilt_etc {
+	name: "privapp-permissions-com.motorola.gamemode",
+	owner: "motorola",
+	sub_dir: "permissions",
+	src: "proprietary/product/etc/permissions/privapp-permissions-com.motorola.gamemode.xml",
+	filename_from_src: true,
+	product_specific: true,
+}
+
+prebuilt_etc {
+	name: "hiddenapi-whitelist-com.motorola.gamemode",
+	owner: "motorola",
+	sub_dir: "sysconfig",
+	src: "proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.gamemode.xml",
+	filename_from_src: true,
+	product_specific: true,
+}
+
+prebuilt_etc {
+	name: "shortcut-com.motorola.gamemode",
+	owner: "motorola",
+	sub_dir: "sysconfig",
+	src: "proprietary/product/etc/sysconfig/shortcut-com.motorola.gamemode.xml",
+	filename_from_src: true,
+	product_specific: true,
+}
+
+prebuilt_etc {
+	name: "com.motorola.game_moment",
+	owner: "motorola",
+	sub_dir: "permissions",
+	src: "proprietary/system_ext/etc/permissions/com.motorola.game_moment.xml",
+	filename_from_src: true,
+	system_ext_specific: true,
+}

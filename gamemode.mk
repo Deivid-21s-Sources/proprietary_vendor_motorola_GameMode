@@ -23,13 +23,8 @@ $(call inherit-product, vendor/motorola/MotoSignatureApp/motosignatureapp.mk)
 
 # Moto Game Mode
 # Version: 35.02.17.00-Release
-PRODUCT_COPY_FILES += \
-    vendor/motorola/GameMode/proprietary/product/etc/default-permissions/default-permissions-com.motorola.gamemode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-com.motorola.gamemode.xml \
-    vendor/motorola/GameMode/proprietary/product/etc/permissions/com.motorola.gamemode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.gamemode.xml \
-    vendor/motorola/GameMode/proprietary/product/etc/permissions/privapp-permissions-com.motorola.gamemode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.gamemode.xml \
-    vendor/motorola/GameMode/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.gamemode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.gamemode.xml \
-    vendor/motorola/GameMode/proprietary/product/etc/sysconfig/shortcut-com.motorola.gamemode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/shortcut-com.motorola.gamemode.xml \
-    vendor/motorola/GameMode/proprietary/system_ext/etc/permissions/com.motorola.game_moment.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.game_moment.xml
-
 PRODUCT_PACKAGES += \
-    GameMode
+    GameMode \
+    hiddenapi-whitelist-com.motorola.gamemode \
+    shortcut-com.motorola.gamemode \
+    com.motorola.game_moment
