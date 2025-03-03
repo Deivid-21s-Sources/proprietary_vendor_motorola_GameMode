@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2008 - 2024 The Android Open Source Project
+# Copyright (C) 2008 - 2025 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, vendor/motorola/MotoSignatureApp/motosignatureapp.mk)
 
 # Moto Game Mode
-# Version: 34.01.0.29.0
+# Version: 35.02.17.00-Release
 PRODUCT_COPY_FILES += \
     vendor/motorola/GameMode/proprietary/product/etc/default-permissions/default-permissions-com.motorola.gamemode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-com.motorola.gamemode.xml \
     vendor/motorola/GameMode/proprietary/product/etc/permissions/com.motorola.gamemode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.gamemode.xml \
